@@ -13,7 +13,7 @@
 5. Expose your application to host server
 >>- docker run -d  -p <host_port>:<container_port> --name <container_Name> <image_name>:<Image_version/tag>
 
->>- docker run -d --name httpd_server -p 8080:80 httpd:2.2
+>>- EXAMPLE: docker run -d --name httpd_server -p 8080:80 httpd:2.2
 6. List out running containers
 >>- docker ps
 7. List out all docker container (running, stpooed, terminated, etc...)
