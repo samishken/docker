@@ -3,7 +3,7 @@
 1. how to search a docker image in hub.docker.com
 >>- docker search httpd
 2. Download a docker image from hub.docker.com
->>- docker i>>- mage pull <image_name>:<image_version/tag>
+>>- docker image pull <image_name>:<image_version/tag>
 3. List out docker images from your local system
 >>- docker image ls
 4. Create/run/start a docker container from image
