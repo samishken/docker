@@ -13,6 +13,9 @@
 5. Expose your application to host server
 >>- docker run -d  -p <host_port>:<container_port> --name <container_Name> <image_name>:<Image_version/tag>
 
+**if the above command isn't working use the following**
+>>- docker run -d --restart unless-stopped -p <host_port>:<container_port> --name <container_Name> <image_name>:<Image_version/tag>
+
 >>- EXAMPLE: docker run -d --name httpd_server -p 8080:80 httpd:2.2
 6. List out running containers
 >>- docker ps
