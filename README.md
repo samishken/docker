@@ -55,8 +55,16 @@
 15. Format Container
 >>- docker ps --format="ID\t{{.ID}}\nNAME\t{{.Names}}\nIMAGE\t{{.Image}}\nPORTS\t{{.Ports}}\nCOMMAND\t{{.Command}}\nCREATED\t{{.CreatedAt}}\nSTATUS\t{{.Status}}\n"
 
-16. Run Dockerfile to create image
+16. Run Dockerfile to create image (Dockerfile - Contains a series of steps that define how your image is build.)
 >>- docker build . -t httpd:latest
+>>- "t" tag
 
 17. Docker run 
 >>- docker run -p 8080:8080 httpd:latest
+
+18. Docker Volumes (allow sharing of data between files, folders & containers)
+>>- (example to share files between local and container run) docker run -d --name website -v $(pwd):/usr/share/nginx/html:ro -p 8080:80 nginx:latest
+>>>- "ro" read only. If we want to write then we need to remove "ro"
+
+>>- (example to share files between containers) 
+
