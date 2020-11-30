@@ -54,3 +54,9 @@
 
 15. Format Container
 >>- docker ps --format="ID\t{{.ID}}\nNAME\t{{.Names}}\nIMAGE\t{{.Image}}\nPORTS\t{{.Ports}}\nCOMMAND\t{{.Command}}\nCREATED\t{{.CreatedAt}}\nSTATUS\t{{.Status}}\n"
+
+16. Run Dockerfile to create image
+>>- docker build . -t httpd:latest
+
+17. Docker run 
+>>- docker run -p 8080:8080 httpd:latest
