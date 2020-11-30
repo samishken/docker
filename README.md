@@ -67,4 +67,5 @@
 >>>- "ro" read only. If we want to write then we need to remove "ro"
 
 >>- (example to share files between containers) 
+>>- docker run -d --name website-copy --volumes-from website -p 8081:80 nginx
 
