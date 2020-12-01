@@ -51,6 +51,7 @@
 
 14. Delete multiple containers
 >>- docker rm $(docker ps -aq)
+>>- docker rm $(docker images -aq)
 
 15. Format Container
 >>- docker ps --format="ID\t{{.ID}}\nNAME\t{{.Names}}\nIMAGE\t{{.Image}}\nPORTS\t{{.Ports}}\nCOMMAND\t{{.Command}}\nCREATED\t{{.CreatedAt}}\nSTATUS\t{{.Status}}\n"
