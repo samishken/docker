@@ -1,12 +1,19 @@
-# docker
+# Docker
+## Container - Container is a running environment for IMAGE
+>>>> - virtual file system
+>>>> - port binded: talk to application running inside of container
+>>>> - application image: postgres, redis mongo, nginx, python (etc)
 
-1. how to search a docker image in hub.docker.com
+
+# Main Docker CLI commands
+1. how to search a docker image in hub.docker.com from CLI
 >>- docker search httpd
 
 2. Download a docker image from hub.docker.com
 >>- docker image pull <image_name>:<image_version/tag>
 
 3. List out docker images from your local system
+>>- docker images or
 >>- docker image ls
 
 4. Create/run/start a docker container from image
