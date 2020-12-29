@@ -77,3 +77,8 @@
 >>- (example to share files between containers) 
 >>- docker run -d --name website-copy --volumes-from website -p 8081:80 nginx
 
+19. Docker compose up & down commands
+>>- docker-compose -f docker-compose.yaml up -d
+>>- docker-compose -f docker-compose.yaml down
+
+
